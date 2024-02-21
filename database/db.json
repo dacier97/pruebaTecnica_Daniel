@@ -1,0 +1,30 @@
+{
+  "login": [
+    {
+      "name": "daniel",
+      "pass": "1234"
+    }
+  ],
+  "users": [
+    {
+      "id": 102,
+      "name": "Daniel",
+      "last_name": "Ortiz",
+      "url_photo": "",
+      "rol": 1,
+      "list": [
+        "VueJS",
+        "Angular",
+        ".Net",
+        "React_Native",
+        "React",
+        "Java",
+        "Python",
+        "SQLServer",
+        "NodeJS"
+      ],
+      "area": "Soporte",
+      "ciudad": "cali"
+    }
+  ]
+}
