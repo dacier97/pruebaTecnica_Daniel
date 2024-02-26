@@ -26,5 +26,67 @@
       "area": "Soporte",
       "ciudad": "cali"
     }
+  ],
+  "projects": [
+    {
+      "id": 1708913295292,
+      "fName": "Daniel",
+      "lName": "Ortiz",
+      "repVal": "htttps://wiky",
+      "devpVal": "daniel",
+      "ciVal": "Si",
+      "cdVal": "No",
+      "frontVal": "react",
+      "backVal": "nodo",
+      "databVal": "mongose"
+    },
+    {
+      "id": 1708913377507,
+      "fName": "dererc",
+      "lName": "arango",
+      "repVal": "htttps://wiky",
+      "devpVal": "pepe",
+      "ciVal": "No",
+      "cdVal": "Si",
+      "frontVal": "java",
+      "backVal": "python",
+      "databVal": "sql"
+    },
+    {
+      "id": 1708914288125,
+      "fName": "Daniel Armando",
+      "lName": "casanal",
+      "repVal": "htttps://wiky",
+      "devpVal": "daniel",
+      "ciVal": "Si",
+      "cdVal": "No",
+      "frontVal": "javascript",
+      "backVal": "nodo",
+      "databVal": "mongo"
+    },
+    {
+      "id": 1708914411615,
+      "fName": "fdhfdh",
+      "lName": "fdhfdh",
+      "repVal": "fhfdh",
+      "devpVal": "fhfdh",
+      "ciVal": "Si",
+      "cdVal": "Si",
+      "frontVal": "javascript",
+      "backVal": "fdg",
+      "databVal": "gdsggsd"
+    },
+    {
+      "id": 1708914980488,
+      "fName": "trhtrh",
+      "lName": "trhtrh",
+      "repVal": "trhtrh",
+      "devpVal": "trhtrh",
+      "ciVal": "Si",
+      "cdVal": "No",
+      "frontVal": "python",
+      "backVal": "sfdgfdsgsd",
+      "databVal": "sgsdg"
+    }
   ]
 }

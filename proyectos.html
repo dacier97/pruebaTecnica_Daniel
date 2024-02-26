@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Pages Proyectos</title>
+    <link rel="stylesheet" href="./css/proyectos_styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="filterEntries">
+          <div class="entries">
+            Paginas
+            <select name="" id="table_size">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+
+          <div class="filter">
+            <label for="search">Buscar:</label>
+            <input
+              type="search"
+              name=""
+              id="search"
+              placeholder="Enter proyecto/cliente"
+            />
+          </div>
+        </div>
+
+        <div class="addMemberBtn">
+          <button>Nuevo Proyecto</button>
+        </div>
+      </header>
+
+      <table>
+        <thead>
+          <tr class="heading">
+            <th>No</th>
+            <th>Proyecto</th>
+            <th>Cliente</th>
+            <th>Repositorio</th>
+            <th>Desarroladores</th>
+            <th>CI</th>
+            <th>CD</th>
+            <th>Frontend</th>
+            <th>Backend</th>
+            <th>DB</th>
+            <th>Accion</th>
+            <!--<th>Alertas</th>
+            <th>Errores</th> -->
+          </tr>
+        </thead>
+
+        <tbody class="userInfo"></tbody>
+      </table>
+
+      <footer>
+        <span class="showEntries">Showing 1 to 10 of 50 entries</span>
+        <div class="pagination"></div>
+      </footer>
+    </div>
+
+    <!--Popup Form-->
+
+    <div class="dark_bg">
+      <div class="popup">
+        <header>
+          <h2 class="modalTitle">Fill the Form</h2>
+          <button class="closeBtn">&times;</button>
+        </header>
+
+        <div class="body">
+          <form action="#" id="myForm">
+            <div class="inputFieldContainer">
+              <div class="nameField">
+                <div class="form_control">
+                  <label for="fName">Nombre Proyecto:</label>
+                  <input type="text" name="" id="fName" required />
+                </div>
+
+                <div class="form_control">
+                  <label for="lName">Nombre Cliente:</label>
+                  <input type="text" name="" id="lName" required />
+                </div>
+              </div>
+
+              <div class="ageCityField">
+                <div class="form_control">
+                  <label for="rep">Repositorio:</label>
+                  <input type="text" name="" id="rep" required />
+                </div>
+
+                <div class="form_control">
+                  <label for="devp">Desarrolladores:</label>
+                  <input type="text" name="" id="devp" required />
+                </div>
+              </div>
+
+              <div class="postSalary">
+                <div class="form_control">
+                  <label for="ci">CI:</label>
+                  <select name="ci" id="ci">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                  </select>
+                  <!--<input type="text" name="" id="ci" required /> -->
+                </div>
+
+                <div class="form_control">
+                  <label for="cd">CD:</label>
+                  <select name="cd" id="cd">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
+                  </select>
+                  <!--<input type="text" name="" id="cd" required /> -->
+                </div>
+              </div>
+
+              <div class="form_control">
+                <label for="front">Frontend:</label>
+                <select name="lenguajes" id="front" multiple>
+                  <option value="javascript">JavaScript</option>
+                  <option value="php">PHP</option>
+                  <option value="java">Java</option>
+                  <option value="golang">Golang</option>
+                  <option value="python">Python</option>
+                  <option value="c#">C#</option>
+                  <option value="C++">C++</option>
+                  <option value="erlang">Erlang</option>
+                </select>
+                <!--<input type="text" name="" id="front" required /> -->
+              </div>
+
+              <div class="form_control">
+                <label for="back">Backend:</label>
+                <input type="text" name="" id="back" required />
+              </div>
+
+              <div class="form_control">
+                <label for="datab">DB:</label>
+                <input type="text" name="" id="datab" required />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <footer class="popupFooter">
+          <button form="myForm" class="submitBtn">Submit</button>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./js/proyectos.js"></script>
+  </body>
+</html>

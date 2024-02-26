@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -27,13 +27,14 @@
         <div class="menu-icon" onclick="openSidebar()">
           <span class="material-icons-outlined">menu</span>
         </div>
-        <div class="header-left">
-          <span id="logoutBotton" class="material-icons-outlined" style="cursor: pointer">logout</span>
-        </div>
         <div class="header-right">
-          <span class="material-icons-outlined">notifications</span>
-          <span class="material-icons-outlined">email</span>
-          <span class="material-icons-outlined">account_circle</span>
+          <span class="material-icons-outlined notifications"
+            >notifications</span
+          >
+          <span class="material-icons-outlined circle">account_circle</span>
+          <span id="logoutBotton" class="material-icons-outlined logout"
+            >logout</span
+          >
         </div>
       </header>
       <!-- End Header -->
@@ -52,37 +53,41 @@
             >close</span
           >
         </div>
+        <nav>
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="/index.html" class="active">
+                <span class="material-icons-outlined">dashboard</span> Dashboard
+              </a>
+            </li>
+            <li class="sidebar-list-item">
+              <a href="/proyectos.html">
+                <span class="material-icons-outlined">inventory_2</span>
+                Proyectos
+              </a>
+            </li>
 
-        <ul class="sidebar-list">
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">dashboard</span> Dashboard
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">inventory_2</span> Proyectos
-            </a>
-          </li>
-
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">groups</span> Usuarios
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">category</span> Roles
-            </a>
-          </li>
-        </ul>
+            <li class="sidebar-list-item">
+              <a href="/usuarios.html">
+                <span class="material-icons-outlined">groups</span> Usuarios
+              </a>
+            </li>
+            <li class="sidebar-list-item">
+              <a href="/roles.html">
+                <span class="material-icons-outlined">category</span> Roles
+              </a>
+            </li>
+          </ul>
+        </nav>
       </aside>
       <!-- End Sidebar -->
 
       <!-- Main -->
       <main class="main-container">
-        <div class="main-title">
-          <h2 style="color: rgb(0, 0, 10); font-size: 26px">DASHBOARD</h2>
+        <div id="dashboard" class="main-title">
+          <h2 style="color: rgb(0, 0, 10); font-size: 26px">
+            DASHBOARD
+          </h2>
         </div>
 
         <div id="weather-container">
@@ -94,7 +99,7 @@
                 .then((res) => res.json())
                 .then((json) =>
                   json.map((data) => {
-                    getWeather(data.ciudad,data.name);
+                    getWeather(data.ciudad, data.name);
                   })
                 );
             };
@@ -109,7 +114,7 @@
           <div id="hourly-forecast"></div>
         </div>
 
-        <div class="main-cards">
+        <div id="proyectos" class="main-cards">
           <div class="card">
             <div class="card-inner">
               <h3>Proyectos registrados</h3>
@@ -120,7 +125,7 @@
 
           <div class="card">
             <div class="card-inner">
-              <h3>Proyectos en desarrollo </h3>
+              <h3>Proyectos en desarrollo</h3>
               <span class="material-icons-outlined">category</span>
             </div>
             <h1>12</h1>
@@ -145,7 +150,7 @@
           </div>
         </div>
 
-        <div class="charts">
+        <div id="usuarios" class="charts">
           <div class="charts-card">
             <h2 class="chart-title">Reporte de commits</h2>
             <div id="bar-chart"></div>
@@ -166,5 +171,6 @@
     <!-- Custom JS -->
     <script src="js/scripts.js"></script>
     <script src="js/logout.js"></script>
+    <script src="js/active_page.js"></script>
   </body>
 </html>
